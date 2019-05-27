@@ -1,1 +1,1 @@
-# JavascriptCookieClicker
+# JavascriptghostClicker

@@ -1,0 +1,23 @@
+body {
+    font-family: Arial;
+}
+
+#ghostSection {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#ghostButton {
+    border: 0px;
+    padding: 0px;
+    background-color: transparent;
+    color: purple;
+    font-size: 100px;
+}
+
+#history {
+    display: float;
+    flex-direction: column;
+}
+
