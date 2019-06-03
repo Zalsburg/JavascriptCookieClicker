@@ -57,7 +57,7 @@ function showExtraClicker(){
 }
 
 function showDeathMachine(){
-    if (noGhosts >= 20){
+    if (noGhosts >= deathPrice){
         deathMachine.disabled = false;
     }
     else{
@@ -70,7 +70,7 @@ deathMachine.onclick = deathMachineClicked;
 
 function extraClickerClicked(){
     noClickers++;
-    noGhosts = noGhosts - 10;
+    noGhosts = noGhosts - clickerPrice;
     ghostCount.innerHTML = noGhosts;
     clickGhost = 0;
     clickerPrice = Math.round(clickerPrice * 1.5);
@@ -91,7 +91,7 @@ function extraClickerClicked(){
 
 function deathMachineClicked(){
     noDeaths++;
-    noGhosts = noGhosts - 20;
+    noGhosts = noGhosts - deathPrice;
     ghostCount.innerHTML = noGhosts;
     clickGhost = 0;
     deathPrice = Math.round(deathPrice * 2);
