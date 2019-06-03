@@ -13,30 +13,61 @@
         <div>
             Click to spook!
         </div>
-        <button id = "ghostButton">
+        <div id = "ghostButton">
                 <i class="fas fa-ghost"></i>
-        </button>
+        </div>
         <div>
-            Ghost Counter: <span id = "ghostCount">0</span>
+            Spook Counter: <span id = "ghostCount">0</span>
         </div>
     </div>
-
+    <br>
     <div id = "upgrades">
-        Upgrades
+        <h4>Upgrades</h4>
         <div id = "upgradesList">
-            <button id = "extraClicker">
-                Extra Clicker
-            </button>
-            <button id = "deathMachine">
-                Make More Ghosts
-            </button>
+            <div>
+                <span class = "Title">Extra Clicker</span>
+                <br>
+                Does a spook every 5 seconds
+                <br>
+                Cost: <span id = "clickerCost">10</span>
+                <br>
+                <button id = "extraClicker">
+                    Purchase
+                </button>
+            </div>
+            <div>
+                <span class = "Title">Make Ghost Spookier</span>
+                <br>
+                Ghost spooks every second
+                <br>
+                Cost: <span id = "deathCost">20</span>
+                <br>
+                <button id = "deathMachine">
+                    Purchase
+                </button>
+            </div>
         </div>
     </div>
 
-    <div>
-        Actions performed:
-        <div id = "history">
+    <br>
 
+    <div id = "actionSummary">
+        <div>
+            <span class = "Title">Upgrade Summary</span>
+            <div id = "summary">
+                <div>
+                    Number of Clickers: <span id = "totalClickers">0</span>
+                </div>
+                <div>
+                    Number of Spookier Ghosts: <span id = "totalDeaths">0</span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span class = "Title">Actions performed:</span>
+            <div id = "history">
+
+            </div>
         </div>
     </div>
 
